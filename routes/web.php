@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\TodoListController;
+use App\Http\Controllers\TaskListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +20,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    Route::get('/', [TodoListController::class, 'edit'])->name('todo');
+    Route::get('/', [TaskListController::class, 'edit'])->name('tasks.edit');
+    Route::post('/task-create', [TaskListController::class, 'create'])->name('task.create');
+    Route::post('/task-delete/{id}', [TaskListController::class, 'delete'])->name('task.delete');
+    Route::post('/task-update/{id}', [TaskListController::class, 'update'])->name('task.update');
 });
 
 require __DIR__ . '/auth.php';
