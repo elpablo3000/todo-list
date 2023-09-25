@@ -1,4 +1,4 @@
-<div class="p-2 sm:p-4 bg-white shadow sm:rounded-lg">
+<div class="p-2 sm:p-4 bg-white shadow rounded-md sm:rounded-lg">
     <div class="grid grid-cols-10 gap-4">
         <div class="col-span-1 py-2.5 text-center">
             <form action="{{route('task.update', ['id' => $task->id, 'completed' => false])}}" method="POST">

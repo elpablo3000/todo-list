@@ -19,7 +19,7 @@
             </div>
 
             <div>
-                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight pt-6">
                     {{ __('To-Do') }}
                 </h2>
             </div>
@@ -31,7 +31,7 @@
             </div>
 
             <div>
-                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight pt-6">
                     {{ __('Done') }}
                 </h2>
             </div>

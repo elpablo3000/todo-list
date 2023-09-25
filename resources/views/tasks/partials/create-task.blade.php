@@ -1,4 +1,4 @@
-<div class="p-2 sm:p-4 bg-white shadow sm:rounded-lg">
+<div class="p-2 sm:p-4 bg-white shadow rounded-md sm:rounded-lg">
     <form action="{{route('task.create')}}" method="POST">
         <div class="grid grid-cols-10 gap-4">
             @csrf
